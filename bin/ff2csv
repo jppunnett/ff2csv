@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'methadone'
+require 'ff2csv.rb'
+
+class App
+  include Methadone::Main
+  include Methadone::CLILogging
+
+  main do |file_spec|
+    Ff2csv::FixedRecord2CSV.new(file_spec, options[:strings], STDIN).convert
+  end
+
+  description "Converts input that is in fixed-length record format, to CSV format."
+
+  options[:strings] = false
+  on("-s", "--strings", "Enclose each CSV field in quotes.")
+
+  arg :file_spec, "The file that describes the fixed-length record."
+
+  version Ff2csv::VERSION
+
+  use_log_level_option
+
+  go!
+end

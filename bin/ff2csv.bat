@@ -1,0 +1,1 @@
+ruby -S ff2csv %*

@@ -1,0 +1,19 @@
+= ff2csv - ff2csv converts fixed-length-records to Comma Separated Values (CSV) format.
+
+Author::  James Punnett (James.Punnett@cibcfcib.com)
+Copyright:: Copyright (c) 2013 CIBC FirstCaribbean
+
+
+DESCRIBE YOUR GEM HERE
+
+== Links
+
+* {Source on Github}[LINK TO GITHUB]
+* RDoc[LINK TO RDOC.INFO]
+
+== Install
+
+== Examples
+
+== Contributing
+
